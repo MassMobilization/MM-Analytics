@@ -51,7 +51,7 @@ shinyServer(function(input, output) {
         
         # Create a color palette with handmade bins.
         mybins <- seq(1, 65, by=10)
-        mypalette <- colorBin( palette="YlOrBr", domain=ptemp$freq, na.color="transparent", bins=mybins)
+        mypalette <- colorBin( palette="Accent", domain=ptemp$freq, na.color="transparent", bins=mybins)
         
         # Prepare the text for the tooltip:
         mytext <- paste(
